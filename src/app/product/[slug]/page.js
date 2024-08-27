@@ -1,7 +1,6 @@
 "use client";
 
 import Navbar from "@/app/components/Navbar";
-
 import Image from "next/image";
 import { useState } from "react";
 import { useParams, notFound } from "next/navigation";
@@ -32,7 +31,6 @@ const products = {
     image: "/images/moroccan-thobe.jpg",
     category: "moroccan-thobes",
   },
-
   "emirati-blue-kandora": {
     name: "Emirati Blue Kandora",
     description:
@@ -63,6 +61,12 @@ export default function ProductPage() {
     discountCode: "",
     productName: product.name,
   });
+
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -124,12 +128,6 @@ export default function ProductPage() {
       console.error("Error submitting form:", error);
       alert("There was an error placing your order. Please try again.");
     }
-  };
-
-  const [showModal, setShowModal] = useState(false);
-
-  const toggleModal = () => {
-    setShowModal(!showModal);
   };
 
   return (
