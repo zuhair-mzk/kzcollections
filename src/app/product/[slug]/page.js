@@ -5,6 +5,43 @@ import Image from "next/image";
 import { useState } from "react";
 import { useParams, notFound } from "next/navigation";
 
+// Example product data, this would typically come from a database or external API
+const products = {
+  "emirati-white-thobe": {
+    name: "Emirati White Thobe",
+    description:
+      "This classic Emirati thobe is made from the finest material. Perfect for both formal and casual occasions.",
+    price: 50,
+    image: "/images/thobe1.jpeg",
+    category: "emirati-kandora",
+  },
+  "emirati-charcoal-gray-kandora": {
+    name: "Emirati Charcoal Gray Kandora",
+    description:
+      "This Emirati Kandora features a sleek, modern design in a deep charcoal gray color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
+    price: 55,
+    image: "/images/emirati-darkgray.jpg",
+    category: "emirati-kandora",
+  },
+  "moroccan-blue-thobe": {
+    name: "Moroccan Blue Thobe",
+    description:
+      "A stylish Moroccan thobe in a striking blue color. Made from premium fabric for comfort and elegance.",
+    price: 60,
+    image: "/images/moroccan-thobe.jpg",
+    category: "moroccan-thobes",
+  },
+  "emirati-blue-kandora": {
+    name: "Emirati Blue Kandora",
+    description:
+      "This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
+    price: 55,
+    image: "/images/emirati-blue.jpg",
+    category: "Emirati Kandoras",
+  },
+  /* Add more products here */
+};
+
 export default function ProductPage() {
   const { slug } = useParams();
   const product = products[slug];
