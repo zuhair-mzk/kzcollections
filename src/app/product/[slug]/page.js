@@ -1,56 +1,9 @@
-"use client";
-
-import Navbar from "@/app/components/Navbar";
-import Image from "next/image";
-import { useState } from "react";
-import { useParams, notFound } from "next/navigation";
-
-// Example product data, this would typically come from a database or external API
-const products = {
-  "emirati-white-thobe": {
-    name: "Emirati White Thobe",
-    description:
-      "This classic Emirati thobe is made from the finest material. Perfect for both formal and casual occasions.",
-    price: 50,
-    image: "/images/thobe1.jpeg",
-    category: "emirati-kandora",
-  },
-  "emirati-charcoal-gray-kandora": {
-    name: "Emirati Charcoal Gray Kandora",
-    description:
-      "This Emirati Kandora features a sleek, modern design in a deep charcoal gray color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
-    price: 55,
-    image: "/images/emirati-darkgray.jpg",
-    category: "emirati-kandora",
-  },
-  "moroccan-blue-thobe": {
-    name: "Moroccan Blue Thobe",
-    description:
-      "A stylish Moroccan thobe in a striking blue color. Made from premium fabric for comfort and elegance.",
-    price: 60,
-    image: "/images/moroccan-thobe.jpg",
-    category: "moroccan-thobes",
-  },
-  "emirati-blue-kandora": {
-    name: "Emirati Blue Kandora",
-    description:
-      "This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
-    price: 55,
-    image: "/images/emirati-blue.jpg",
-    category: "Emirati Kandoras",
-  },
-
-  /* Add more products here */
-};
-
+// Fixed syntax issue
 export default function ProductPage() {
   const { slug } = useParams();
   const product = products[slug];
 
-  if (!product) {
-    return notFound();
-  }
-
+  // Always declare hooks at the top level of the component
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -59,7 +12,7 @@ export default function ProductPage() {
     length: "",
     shoulderWidth: "",
     discountCode: "",
-    productName: product.name,
+    productName: product?.name || "",
   });
 
   const [showModal, setShowModal] = useState(false);
@@ -67,6 +20,10 @@ export default function ProductPage() {
   const toggleModal = () => {
     setShowModal(!showModal);
   };
+
+  if (!product) {
+    return notFound();
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -267,7 +224,10 @@ export default function ProductPage() {
                   type="text"
                   value={formData.shoulderWidth}
                   onChange={(e) =>
-                    setFormData({ ...formData, shoulderWidth: e.target.value })
+                    setFormData({
+                      ...formData,
+                      shoulderWidth: e.target.value,
+                    })
                   }
                   className="mt-1 block w-full px-4 py-2 border rounded-md text-black"
                   required
