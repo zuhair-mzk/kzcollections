@@ -1,17 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 240, 240, 240; /* Creamish white */
   --background-end-rgb: 255, 255, 255;
+  --primary-color: 37, 53, 90; /* Your primary color */
+  --secondary-color: 0, 127, 163; /* Your secondary color */
+  --card-bg-color: 245, 245, 245; /* Light gray for card background */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 240, 240, 240;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -24,10 +27,66 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "Inter", sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bg-cream {
+    background-color: rgb(var(--background-start-rgb));
+  }
+
+  .text-primary {
+    color: rgb(var(--primary-color));
+  }
+
+  .text-secondary {
+    color: rgb(var(--secondary-color));
+  }
+
+  .card {
+    background-color: rgb(var(--card-bg-color));
+    border-radius: 0.5rem;
+    padding: 1.2rem; /* Reduced padding to make the card smaller */
+    max-width: 420px; /* Constrain the width to make the card smaller */
+    box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.1),
+      0 3px 5px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-title {
+    font-size: 1.15rem; /* Reduced font size */
+    font-weight: 600;
+    text-align: center;
+    color: rgb(var(--primary-color));
+    margin-top: 0.75rem;
+  }
+
+  .card-price {
+    text-align: center;
+    margin-top: 0.4rem;
+    color: rgb(var(--secondary-color));
+  }
+
+  .btn-order {
+    display: inline-flex;
+    margin-top: 8px;
+    padding: 0.4rem 0.8rem;
+    background-color: rgb(var(--primary-color));
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .btn-order:hover {
+    background-color: rgb(var(--secondary-color));
   }
 }
