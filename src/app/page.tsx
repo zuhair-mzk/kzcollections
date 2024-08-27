@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-cream">
       <Navbar />
-      <main className="w-full max-w-screen-xl mx-auto px-4 py-24">
+      <main className="container mx-auto px-1 py-24">
         {/* Section: Emirati Kandora */}
         <section id="emirati-kandora" className="py-8">
           <h2 className="text-4xl font-arabic text-center text-primary mb-8">

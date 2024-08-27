@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -115,15 +115,21 @@ export default function Product() {
               />
             </div>
             <p className="text-sm text-gray-600 mt-4 text-center">
-              This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.
+              This Emirati Kandora features a sleek, modern design in a deep
+              blue color. Crafted from high-quality, breathable fabric, it
+              provides comfort and elegance for any occasion.
             </p>
           </div>
           <div className="flex flex-col justify-start space-y-2">
-            <h1 className="text-2xl font-bold mb-4 text-black">Emirati Blue Kandora</h1>
-            <p className="text-base text-gray-700 mb-4">This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.</p>
-            <p className="text-xl font-bold text-secondary mb-4">
-              $55
+            <h1 className="text-2xl font-bold mb-4 text-black">
+              Emirati Blue Kandora
+            </h1>
+            <p className="text-base text-gray-700 mb-4">
+              This Emirati Kandora features a sleek, modern design in a deep
+              blue color. Crafted from high-quality, breathable fabric, it
+              provides comfort and elegance for any occasion.
             </p>
+            <p className="text-xl font-bold text-secondary mb-4">$55</p>
 
             <form onSubmit={handleSubmit} className="space-y-2">
               <div>
