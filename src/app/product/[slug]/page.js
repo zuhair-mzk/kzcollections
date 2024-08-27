@@ -1,4 +1,10 @@
-// Fixed syntax issue
+"use client";
+
+import Navbar from "@/app/components/Navbar";
+import Image from "next/image";
+import { useState } from "react";
+import { useParams, notFound } from "next/navigation";
+
 export default function ProductPage() {
   const { slug } = useParams();
   const product = products[slug];
