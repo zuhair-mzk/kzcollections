@@ -1,6 +1,7 @@
 "use client";
 
-import Navbar from "../../components/Navbar";
+import Navbar from "@/app/components/Navbar";
+
 import Image from "next/image";
 import { useState } from "react";
 import { useParams, notFound } from "next/navigation";
@@ -32,15 +33,15 @@ const products = {
     category: "moroccan-thobes",
   },
 
-  
   "emirati-blue-kandora": {
     name: "Emirati Blue Kandora",
-    description: "This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
+    description:
+      "This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
     price: 55,
     image: "/images/emirati-blue.jpg",
-    category: "Emirati Kandoras"
+    category: "Emirati Kandoras",
   },
-  
+
   /* Add more products here */
 };
 
