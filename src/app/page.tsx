@@ -15,7 +15,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-4">
             <div className="card w-full md:w-1/4 px-2">
               <Image
-                src="/images/em5.jpg"
+                src="/images/thobe1.jpeg"
                 alt="Emirati White Thobe"
                 width={500}
                 height={500}

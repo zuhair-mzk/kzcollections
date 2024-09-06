@@ -108,7 +108,7 @@ export default function Product() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mt-12">
               <Image
-                src="/images/em5.jpg"
+                src="/images/thobe1.jpeg"
                 alt="Emirati White Thobe"
                 width={500}
                 height={500}
@@ -116,15 +116,19 @@ export default function Product() {
               />
             </div>
             <p className="text-sm text-gray-600 mt-4 text-center">
-              This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.
+              This classic white Emirati thobe is crafted from premium fabric,
+              making it a versatile choice for formal or casual wear.
             </p>
           </div>
           <div className="flex flex-col justify-start space-y-2">
-            <h1 className="text-2xl font-bold mb-4 text-black">Emirati White Thobe</h1>
-            <p className="text-base text-gray-700 mb-4">This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.</p>
-            <p className="text-xl font-bold text-secondary mb-4">
-              $60
+            <h1 className="text-2xl font-bold mb-4 text-black">
+              Emirati White Thobe
+            </h1>
+            <p className="text-base text-gray-700 mb-4">
+              This classic white Emirati thobe is crafted from premium fabric,
+              making it a versatile choice for formal or casual wear.
             </p>
+            <p className="text-xl font-bold text-secondary mb-4">$60</p>
 
             <form onSubmit={handleSubmit} className="space-y-2">
               <div>

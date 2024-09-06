@@ -162,55 +162,55 @@ const products = {
     description:
       "This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.",
     price: 60,
-    image: "/images/em5.jpg",
+    image: "/images/thobe1.jpeg",
     category: "emirati kandora",
   },
 
-  
   "dark-blue": {
     name: "Dark Blue",
-    description: "This dark blue hooded thobe offers both comfort and style, with intricate embroidery on the front and a practical hood for a modern look.",
+    description:
+      "This dark blue hooded thobe offers both comfort and style, with intricate embroidery on the front and a practical hood for a modern look.",
     price: 60,
     image: "/images/mh1.jpg",
-    category: "hooded thobes"
+    category: "hooded thobes",
   },
-  
-  
-  "grey": {
+
+  grey: {
     name: "Grey",
-    description: "A sleek grey hooded thobe designed with intricate embroidery and a comfortable fit. Perfect for casual wear with a modern twist.",
+    description:
+      "A sleek grey hooded thobe designed with intricate embroidery and a comfortable fit. Perfect for casual wear with a modern twist.",
     price: 60,
     image: "/images/mh2.jpg",
-    category: "hooded thobes"
+    category: "hooded thobes",
   },
-  
-  
+
   "light-blue": {
     name: "Light Blue",
-    description: "This light blue hooded thobe features a unique pattern, combining comfort with traditional design elements.",
+    description:
+      "This light blue hooded thobe features a unique pattern, combining comfort with traditional design elements.",
     price: 60,
     image: "/images/mh3.jpg",
-    category: "hooded thobes"
+    category: "hooded thobes",
   },
-  
-  
-  "red": {
+
+  red: {
     name: "Red",
-    description: "A bold burgundy/red hooded thobe with golden embroidery, offering both elegance and casual comfort.",
+    description:
+      "A bold burgundy/red hooded thobe with golden embroidery, offering both elegance and casual comfort.",
     price: 60,
     image: "/images/mh4.jpg",
-    category: "hooded thobes"
+    category: "hooded thobes",
   },
-  
-  
-  "blue": {
+
+  blue: {
     name: "Blue",
-    description: "This stylish blue hooded thobe offers a relaxed and modern look, perfect for casual or formal wear.",
+    description:
+      "This stylish blue hooded thobe offers a relaxed and modern look, perfect for casual or formal wear.",
     price: 60,
     image: "/images/mh7.jpg",
-    category: "hooded thobes"
+    category: "hooded thobes",
   },
-  
+
   /* Add more products here */
 };
 
