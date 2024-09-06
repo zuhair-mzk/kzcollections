@@ -15,7 +15,7 @@ export default function Product() {
     length: "",
     shoulderWidth: "",
     discountCode: "",
-    productName: "Emirati White Thobe", // This will be replaced by the script
+    productName: "Moroccan Blue Thobe", // This will be replaced by the script
   });
 
   const handleSubmit = async (e) => {
@@ -70,7 +70,7 @@ export default function Product() {
           length: "",
           shoulderWidth: "",
           discountCode: "",
-          productName: "Emirati White Thobe",
+          productName: "Moroccan Blue Thobe",
         });
       } else {
         alert("There was an error placing your order. Please try again.");
@@ -102,29 +102,37 @@ export default function Product() {
           >
             Emirati Kandora
           </Link>{" "}
-          / <span className="text-secondary">Emirati White Thobe</span>
+          / <span className="text-secondary">Moroccan Blue Thobe</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="flex flex-col items-center">
             <div className="flex justify-center mt-12">
               <Image
-                src="/images/em5.jpg"
-                alt="Emirati White Thobe"
+                src="/images/m3.jpg"
+                alt="Moroccan Blue Thobe"
                 width={500}
                 height={500}
                 className="rounded-md shadow-lg border-2 border-black"
               />
             </div>
             <p className="text-sm text-gray-600 mt-4 text-center">
-              This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.
+              This elegant Moroccan thobe is made from breathable, lightweight
+              fabric and features an intricate embroidered neckline in a rich
+              blue color. Ideal for formal and casual occasions, it blends
+              traditional craftsmanship with modern style.
             </p>
           </div>
           <div className="flex flex-col justify-start space-y-2">
-            <h1 className="text-2xl font-bold mb-4 text-black">Emirati White Thobe</h1>
-            <p className="text-base text-gray-700 mb-4">This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.</p>
-            <p className="text-xl font-bold text-secondary mb-4">
-              $60
+            <h1 className="text-2xl font-bold mb-4 text-black">
+              Moroccan Blue Thobe
+            </h1>
+            <p className="text-base text-gray-700 mb-4">
+              This elegant Moroccan thobe is made from breathable, lightweight
+              fabric and features an intricate embroidered neckline in a rich
+              blue color. Ideal for formal and casual occasions, it blends
+              traditional craftsmanship with modern style.
             </p>
+            <p className="text-xl font-bold text-secondary mb-4">$60</p>
 
             <form onSubmit={handleSubmit} className="space-y-2">
               <div>

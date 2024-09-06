@@ -19,7 +19,7 @@ const products = {
     name: "Emirati Charcoal Gray Kandora",
     description:
       "This Emirati Kandora features a sleek, modern design in a deep charcoal gray color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
-    price: 55,
+    price: 60,
     image: "/images/emirati-darkgray.jpg",
     category: "emirati-kandora",
   },
@@ -35,10 +35,182 @@ const products = {
     name: "Emirati Blue Kandora",
     description:
       "This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
-    price: 55,
+    price: 60,
     image: "/images/emirati-blue.jpg",
     category: "Emirati Kandoras",
   },
+
+  "moroccan-grey-thobe": {
+    name: "Moroccan Grey Thobe",
+    description:
+      "This stylish Moroccan thobe combines traditional elegance with modern craftsmanship. Made from lightweight, breathable fabric, it features an intricate, grey embroidered neckline that adds a touch of sophistication to its minimalist design.",
+    price: 60,
+    image: "/images/m2.jpg",
+    category: "moroccan thobes",
+  },
+
+  "moroccan-blue-thobe": {
+    name: "Moroccan Blue Thobe",
+    description:
+      "This elegant Moroccan thobe is made from breathable, lightweight fabric and features an intricate embroidered neckline in a rich blue color. Ideal for formal and casual occasions, it blends traditional craftsmanship with modern style.",
+    price: 60,
+    image: "/images/m3.jpg",
+    category: "moroccan thobes",
+  },
+
+  "moroccan-light-blue-thobe": {
+    name: "Moroccan light blue Thobe",
+    description:
+      "This sophisticated Moroccan grey thobe is designed with a blend of traditional embroidery and modern elegance. Made from high-quality, lightweight fabric, it offers comfort and durability for any occasion.",
+    price: 60,
+    image: "/images/m1.jpg",
+    category: "moroccan thobes",
+  },
+
+  "moroccan-grey---embroidered-design": {
+    name: "Moroccan Grey - Embroidered Design",
+    description:
+      "This Moroccan grey thobe features beautiful intricate embroidery around the neckline, offering both traditional style and modern comfort. Crafted from breathable fabric, it's perfect for any occasion.",
+    price: 60,
+    image: "/images/m4.jpg",
+    category: "moroccan thobes",
+  },
+
+  "moroccan-brown---geometric-embroidery": {
+    name: "Moroccan Brown - Geometric Embroidery",
+    description:
+      "This Moroccan brown thobe showcases a unique geometric embroidery pattern on the neckline and chest area. It is made from high-quality fabric that ensures comfort and style.",
+    price: 60,
+    image: "/images/m5.jpg",
+    category: "moroccan thobes",
+  },
+
+  "moroccan-light-beige---subtle-embroidery": {
+    name: "Moroccan Light Beige - Subtle Embroidery",
+    description:
+      "This Moroccan light beige thobe combines understated elegance with a soft, breathable fabric. The delicate embroidery adds a refined touch, making it suitable for both casual and formal settings.",
+    price: 60,
+    image: "/images/m6.jpg",
+    category: "moroccan thobes",
+  },
+
+  "grey---blue-geometric-embroidery": {
+    name: "Grey - Blue Geometric Embroidery",
+    description:
+      "This Moroccan grey thobe is adorned with blue geometric embroidery along the neckline and chest. Made from a comfortable, breathable fabric, it provides a stylish and elegant look for any occasion.",
+    price: 60,
+    image: "/images/m7.jpg",
+    category: "moroccan thobes",
+  },
+
+  "blue---gold-embroidery": {
+    name: "Blue - Gold Embroidery",
+    description:
+      "This Moroccan blue thobe features stunning gold embroidery on the neckline and chest area, offering a unique blend of luxury and comfort. Perfect for both casual and formal settings.",
+    price: 60,
+    image: "/images/m8.jpg",
+    category: "moroccan thobes",
+  },
+
+  "dark-purple---yellow-embroidery": {
+    name: "Dark Purple - Yellow Embroidery",
+    description:
+      "This Moroccan dark purple thobe showcases a bright yellow embroidered pattern along the neckline, making a bold fashion statement. Crafted from breathable fabric, it ensures comfort and elegance.",
+    price: 60,
+    image: "/images/m9.jpg",
+    category: "moroccan thobes",
+  },
+
+  "burgundy---white-embroidery": {
+    name: "Burgundy - White Embroidery",
+    description:
+      "This Moroccan burgundy thobe features an intricate white embroidery design on the neckline, offering both traditional style and modern craftsmanship. The breathable fabric provides comfort in any setting.",
+    price: 60,
+    image: "/images/m10.jpg",
+    category: "moroccan thobes",
+  },
+
+  "light-grey---dark-grey-embroidery": {
+    name: "Light grey - Dark Grey Embroidery",
+    description:
+      "This Moroccan light grey thobe is accented with dark grey embroidery along the neckline and chest. Made from high-quality fabric, it offers a blend of tradition and modern design, suitable for any occasion.",
+    price: 60,
+    image: "/images/m15.jpg",
+    category: "moroccan thobes",
+  },
+
+  "light-olive-thobe": {
+    name: "Light Olive Thobe",
+    description:
+      "This Emirati thobe in light olive color provides a minimalist yet elegant look, crafted from lightweight fabric for everyday comfort.",
+    price: 60,
+    image: "/images/em6.jpg",
+    category: "emirati kandora",
+  },
+
+  "light-grey-thobe": {
+    name: "Light Grey Thobe",
+    description:
+      "A sleek and elegant light grey Emirati thobe, perfect for both formal and casual settings, designed for comfort and style.",
+    price: 60,
+    image: "/images/em7.jpg",
+    category: "emirati kandora",
+  },
+
+  "emirati-white-thobe": {
+    name: "Emirati White Thobe",
+    description:
+      "This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.",
+    price: 60,
+    image: "/images/em5.jpg",
+    category: "emirati kandora",
+  },
+
+  
+  "dark-blue": {
+    name: "Dark Blue",
+    description: "This dark blue hooded thobe offers both comfort and style, with intricate embroidery on the front and a practical hood for a modern look.",
+    price: 60,
+    image: "/images/mh1.jpg",
+    category: "hooded thobes"
+  },
+  
+  
+  "grey": {
+    name: "Grey",
+    description: "A sleek grey hooded thobe designed with intricate embroidery and a comfortable fit. Perfect for casual wear with a modern twist.",
+    price: 60,
+    image: "/images/mh2.jpg",
+    category: "hooded thobes"
+  },
+  
+  
+  "light-blue": {
+    name: "Light Blue",
+    description: "This light blue hooded thobe features a unique pattern, combining comfort with traditional design elements.",
+    price: 60,
+    image: "/images/mh3.jpg",
+    category: "hooded thobes"
+  },
+  
+  
+  "red": {
+    name: "Red",
+    description: "A bold burgundy/red hooded thobe with golden embroidery, offering both elegance and casual comfort.",
+    price: 60,
+    image: "/images/mh4.jpg",
+    category: "hooded thobes"
+  },
+  
+  
+  "blue": {
+    name: "Blue",
+    description: "This stylish blue hooded thobe offers a relaxed and modern look, perfect for casual or formal wear.",
+    price: 60,
+    image: "/images/mh7.jpg",
+    category: "hooded thobes"
+  },
+  
   /* Add more products here */
 };
 

@@ -42,6 +42,12 @@ export default function Navbar() {
             Moroccan Thobes
           </Link>
           <Link
+            href="/#hooded-thobes"
+            className="text-lg text-black hover:text-secondary"
+          >
+            Hooded Thobes
+          </Link>
+          <Link
             href="/#abayas"
             className="text-lg text-black hover:text-secondary"
           >
@@ -86,6 +92,13 @@ export default function Navbar() {
             onClick={toggleMenu}
           >
             Moroccan Thobes
+          </Link>
+          <Link
+            href="/#hooded-thobes"
+            className="block px-4 py-2 text-lg text-black hover:text-secondary"
+            onClick={toggleMenu}
+          >
+            Hooded Thobes
           </Link>
           <Link
             href="/#abayas"

@@ -92,7 +92,7 @@ function updateMainPage(productName, imageName, price, category) {
 
   // Create the HTML to add to the main page
   const productHtml = `
-            <div className="card w-full md:w-1/3 px-2">
+            <div className="card w-full md:w-1/4 px-2">
               <Image
                 src="/images/${imageName}"
                 alt="${productName}"
@@ -126,10 +126,47 @@ function updateMainPage(productName, imageName, price, category) {
 
 // Example usage:
 
+// For the first thobe (Em6)
 createProductPage(
-  "Emirati Blue Kandora",
-  "emirati-blue.jpg",
-  "This Emirati Kandora features a sleek, modern design in a deep blue color. Crafted from high-quality, breathable fabric, it provides comfort and elegance for any occasion.",
-  55.0,
-  "Emirati Kandoras"
+  "Dark Blue",
+  "mh1.jpg",
+  "This dark blue hooded thobe offers both comfort and style, with intricate embroidery on the front and a practical hood for a modern look.",
+  60.0,
+  "hooded-thobes"
+);
+
+// For the second hooded thobe (mh2)
+createProductPage(
+  "Grey",
+  "mh2.jpg",
+  "A sleek grey hooded thobe designed with intricate embroidery and a comfortable fit. Perfect for casual wear with a modern twist.",
+  60.0,
+  "hooded-thobes"
+);
+
+// For the third hooded thobe (mh3)
+createProductPage(
+  "Light Blue",
+  "mh3.jpg",
+  "This light blue hooded thobe features a unique pattern, combining comfort with traditional design elements.",
+  60.0,
+  "hooded-thobes"
+);
+
+// For the fourth hooded thobe (mh4)
+createProductPage(
+  "Red",
+  "mh4.jpg",
+  "A bold burgundy/red hooded thobe with golden embroidery, offering both elegance and casual comfort.",
+  60.0,
+  "hooded-thobes"
+);
+
+// For the fifth hooded thobe (mh7)
+createProductPage(
+  "Blue",
+  "mh7.jpg",
+  "This stylish blue hooded thobe offers a relaxed and modern look, perfect for casual or formal wear.",
+  60.0,
+  "hooded-thobes"
 );

@@ -15,7 +15,7 @@ export default function Product() {
     length: "",
     shoulderWidth: "",
     discountCode: "",
-    productName: "Emirati White Thobe", // This will be replaced by the script
+    productName: "Light Blue", // This will be replaced by the script
   });
 
   const handleSubmit = async (e) => {
@@ -70,7 +70,7 @@ export default function Product() {
           length: "",
           shoulderWidth: "",
           discountCode: "",
-          productName: "Emirati White Thobe",
+          productName: "Light Blue",
         });
       } else {
         alert("There was an error placing your order. Please try again.");
@@ -102,26 +102,26 @@ export default function Product() {
           >
             Emirati Kandora
           </Link>{" "}
-          / <span className="text-secondary">Emirati White Thobe</span>
+          / <span className="text-secondary">Light Blue</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="flex flex-col items-center">
             <div className="flex justify-center mt-12">
               <Image
-                src="/images/em5.jpg"
-                alt="Emirati White Thobe"
+                src="/images/mh3.jpg"
+                alt="Light Blue"
                 width={500}
                 height={500}
                 className="rounded-md shadow-lg border-2 border-black"
               />
             </div>
             <p className="text-sm text-gray-600 mt-4 text-center">
-              This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.
+              This light blue hooded thobe features a unique pattern, combining comfort with traditional design elements.
             </p>
           </div>
           <div className="flex flex-col justify-start space-y-2">
-            <h1 className="text-2xl font-bold mb-4 text-black">Emirati White Thobe</h1>
-            <p className="text-base text-gray-700 mb-4">This classic white Emirati thobe is crafted from premium fabric, making it a versatile choice for formal or casual wear.</p>
+            <h1 className="text-2xl font-bold mb-4 text-black">Light Blue</h1>
+            <p className="text-base text-gray-700 mb-4">This light blue hooded thobe features a unique pattern, combining comfort with traditional design elements.</p>
             <p className="text-xl font-bold text-secondary mb-4">
               $60
             </p>
